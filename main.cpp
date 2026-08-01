@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "void_functions.cpp"
 
 using namespace std;
 
@@ -12,5 +13,5 @@ int add_numberCLC2;
 
 int main(){
 
-    
+    CLCmenu_interact();
 }
