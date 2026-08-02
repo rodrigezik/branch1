@@ -39,5 +39,17 @@ int main(){
         case 3:
         CLCmultiply_choice();
         break;
+
+        case 4:
+        CLCdivide_choice();
+        break;
+
+        default:
+        cout<<"yeah i guess there arent more than 4 options"<<endl;
+
+        if (CLCmenu_choice > 4) {
+            cout<<"yeah you are going back"<<endl;
+            return;
+        }
     }
 }
