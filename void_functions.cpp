@@ -13,6 +13,7 @@ void CLCmenu_interact() {
 
 
 //okay there are functions 
+//last time i used c++ was so long ago
 
 void CLCadd_choice() {
     cout<<"welcome give me a first number to add!"<<endl;
@@ -46,5 +47,37 @@ void CLCadd_choice() {
         }
 
         
+    }
+}
+
+//so much else/if's aint it?
+//i dont care about it...
+
+void CLCminus_choice() {
+    cout<<"welcome, give me a number"<<endl;
+    cin>>CLC_int1;
+
+    if (CLC_int1 == true) {
+        cout<<"now give the number you want to minus"<<endl;
+        cin>>CLC_int2;
+
+        if (CLC_int2 == 0) {
+            cout<<"just give the random number..."<<endl;
+            cin>>CLC_int2;
+        }
+    } 
+    cout<<"now give the third number (just write 0 if you dont want to PROCEED)"<<endl;
+    cin>>CLC_int3;
+
+    if (CLC_int3 == 0) {
+        cout<<"you gave 2 numbers that equals..."<<endl;
+        cout<<CLC_int1 - CLC_int2<<endl;
+
+
+    } else {
+
+        cout<<"woah you decided to give this third number..."<<endl;
+        cout<<"i guess that equals:"<<endl;
+        cout<<CLC_int1 - CLC_int2 - CLC_int3<<endl;
     }
 }

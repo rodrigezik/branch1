@@ -30,6 +30,8 @@ int main(){
         CLCadd_choice();
         break;
 
-
+        case 2:
+        CLCminus_choice();
+        break;
     }
 }
