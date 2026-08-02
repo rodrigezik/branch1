@@ -33,5 +33,9 @@ int main(){
         case 2:
         CLCminus_choice();
         break;
+
+        case 3:
+        CLCmultiply_choice();
+        break;
     }
 }

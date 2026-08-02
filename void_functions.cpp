@@ -11,9 +11,17 @@ void CLCmenu_interact() {
    
 }
 
+//very, very silly welcome void function :skull:
+void CLCsilly_welcome() {
+    cout<<"welcome, give me a number."<<endl;
+}
+
 
 //okay there are functions 
 //last time i used c++ was so long ago
+//i guess under it you have a very cool
+//function that allows to add numbers to each
+//other! very fun and family friendly!
 
 void CLCadd_choice() {
     cout<<"welcome give me a first number to add!"<<endl;
@@ -54,7 +62,8 @@ void CLCadd_choice() {
 //i dont care about it...
 
 void CLCminus_choice() {
-    cout<<"welcome, give me a number"<<endl;
+    
+    CLCsilly_welcome();
     cin>>CLC_int1;
 
     if (CLC_int1 == true) {
@@ -80,4 +89,33 @@ void CLCminus_choice() {
         cout<<"i guess that equals:"<<endl;
         cout<<CLC_int1 - CLC_int2 - CLC_int3<<endl;
     }
+}
+
+//the function for multiplying! very fun
+//i feel like a [[bigshot]]
+
+void CLCmultiply_choice() {
+    
+    CLCsilly_welcome();
+    cin>>CLC_int1;
+ 
+    cout<<"give me the second number that you wanna multiply"<<endl;
+    cin>>CLC_int2;
+
+    cout<<"now give the third number (write 0 if you dont want third number)"<<endl;
+    cin>>CLC_int3;
+
+    if (CLC_int3 == 0) {
+        cout<<"okay so without third number..."<<endl;
+        cout<<"i guess that equals:"<<endl;
+        cout<<CLC_int1 * CLC_int2<<endl;
+
+    } else {
+        //very dramatic entrance 
+        cout<<"so you picked the third number..."<<endl;
+        cout<<"that equals:"<<endl;
+        cout<<CLC_int1 * CLC_int2 * CLC_int3<<endl;
+    }
+
+    
 }
