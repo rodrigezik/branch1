@@ -1,1 +1,6 @@
 i made that program for fun i dont even want to publish it but there it is...
+when i look at this code i wanna be a [[Big shot]]
+remember this code is only a calculator and im not some super good coder...
+
+and this repo is only my try to test my clean code skills (dude i dont have any)
+btw i dont even know if this works properly :sob:
