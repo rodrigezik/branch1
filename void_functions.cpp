@@ -5,8 +5,8 @@ using namespace std;
 void CLCmenu_interact() {
 
     cout<<R"( WELCOME TO CALCULATOR!
-    [1] PLUS [2] MINUS 
-    [3] MULTIPLY [3] DIVIDE
+    [1] PLUS        [2] MINUS 
+    [3] MULTIPLY    [4] DIVIDE
     )"<<endl;
    
 }
@@ -23,38 +23,41 @@ void CLCsilly_welcome() {
 //function that allows to add numbers to each
 //other! very fun and family friendly!
 
+//okay so i needed to rewrite the whole thing...
+//kinda fun i guess!
+
 void CLCadd_choice() {
-    cout<<"welcome give me a first number to add!"<<endl;
+    CLCsilly_welcome();
     cin>>CLC_int1;
 
-    if (CLC_int1 == true) {
-        cout<<"nice now gimme the second number!"<<endl;
-        cin>>CLC_int2;
+    cout<<"give me the second number"<<endl;
+    cin>>CLC_int2;
+
+    if (CLC_int2 == 0) {
+        cout<<"uhh cool i guess give me a third number"<<endl;
+        cin>>CLC_int3;
+
+        cout<<"thats the spirit! that equals:"<<endl;
+        cout<<CLC_int1 + CLC_int3<<endl;
     }
 
-    while (CLC_int2 == true) {
-        cout<<"do you want to add a third number? (y/n)"<<endl;
-        cin>>CLC_thirdchoice; 
+    cout<<"give me a third number (if no just write a 0)"<<endl;
+    cin>>CLC_int3;
 
-        if (CLC_thirdchoice == "y") {
-            cout<<"okay now gimme the third number!"<<endl;
-            cin>>CLC_int3;
+    if (CLC_int3 == 0) {
 
-            cout<<"your calculated number is:"<<endl;
-            cout<<CLC_int1 + CLC_int2 + CLC_int3<<endl;
+        cout<<"that equals:"<<endl;
+        cout<<CLC_int1 + CLC_int2<<endl;
 
+    } else if (CLC_int2 == 0 || CLC_int3 == 0) {
 
+        cout<<"dude."<<endl;
+        cout<<CLC_int1<<endl;
 
-        } else if (CLC_thirdchoice == "n") {
-            cout<<"okay i understand..."<<endl;
-            cout<<"your calculated numbers equals:"<<endl;
-            cout<<CLC_int1 + CLC_int2<<endl;
-        
-        } else {
-            cout<<"just type n or y..."<<endl;
-        }
+    } else {
 
-        
+        cout<<"that equals:"<<endl;
+        cout<<CLC_int1 + CLC_int2 + CLC_int3<<endl;
     }
 }
 
@@ -66,27 +69,19 @@ void CLCminus_choice() {
     CLCsilly_welcome();
     cin>>CLC_int1;
 
-    if (CLC_int1 == true) {
-        cout<<"now give the number you want to minus"<<endl;
-        cin>>CLC_int2;
+    cout<<"give me a second number"<<endl;
+    cin>>CLC_int2;
 
-        if (CLC_int2 == 0) {
-            cout<<"just give the random number..."<<endl;
-            cin>>CLC_int2;
-        }
-    } 
-    cout<<"now give the third number (just write 0 if you dont want to PROCEED)"<<endl;
+    cout<<"give me a third one (write 0 if ya wanna skip)"<<endl;
     cin>>CLC_int3;
-
+    
     if (CLC_int3 == 0) {
-        cout<<"you gave 2 numbers that equals..."<<endl;
+        cout<<"that equals:"<<endl;
         cout<<CLC_int1 - CLC_int2<<endl;
-
-
     } else {
-
-        cout<<"woah you decided to give this third number..."<<endl;
-        cout<<"i guess that equals:"<<endl;
+        //dramatic entrance
+        cout<<"so you picked the third number..."<<endl;
+        cout<<"that must be equal to:"<<endl;
         cout<<CLC_int1 - CLC_int2 - CLC_int3<<endl;
     }
 }
@@ -111,11 +106,29 @@ void CLCmultiply_choice() {
         cout<<CLC_int1 * CLC_int2<<endl;
 
     } else {
-        //very dramatic entrance 
+        //another dramatic entrance 
         cout<<"so you picked the third number..."<<endl;
         cout<<"that equals:"<<endl;
         cout<<CLC_int1 * CLC_int2 * CLC_int3<<endl;
     }
 
     
+}
+
+void CLCdivide_choice() {
+    CLCsilly_welcome();
+    cin>>CLC_int1;
+
+    cout<<"give me the second number to divide"<<endl;
+    cin>>CLC_int2;
+
+    
+    if (CLC_int1 or CLC_int2 == 0) {
+        //even i dont believe i added this here
+        //but some people can really do this...
+
+        cout<<"you cant divide by 0..."<<endl;
+    } else {
+        cout<<CLC_int1 / CLC_int2<<endl;
+    }
 }

@@ -7,6 +7,8 @@ using namespace std;
 
 //its funny im using std namespace aint it?
 //i hate writing new repo's...
+
+
 int CLCmenu_choice;
 int add_numberCLC1;
 int add_numberCLC2;
