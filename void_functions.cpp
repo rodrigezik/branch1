@@ -148,7 +148,7 @@ void CLCdivide_choice() {
 
     using namespace CLC_processvar;
     using namespace CLC_variables; 
-    
+
     CLCsilly_welcome();
     cin>>CLC_int1;
 

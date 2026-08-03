@@ -42,7 +42,7 @@ int main(){
 
         if (CLCmenu_choice > 4) {
             cout<<"yeah you are going back"<<endl;
-            return;
+            //yeah that return i just deleted crashed the whole program :sob:
         }
     }
 }
