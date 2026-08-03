@@ -4,19 +4,12 @@
 #include "void_functions.cpp"
 
 using namespace std;
+using namespace CLC_processvar;
+using namespace CLC_variables;
 
 //its funny im using std namespace aint it?
 //i hate writing new repo's...
 
-
-int CLCmenu_choice;
-int add_numberCLC1;
-int add_numberCLC2;
-string CLC_thirdchoice;
-
-int CLC_int1;
-int CLC_int2;
-int CLC_int3;
 
 //yeah thats a whole main right here 
 //kinda cool i guess?

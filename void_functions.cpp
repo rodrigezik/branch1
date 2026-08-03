@@ -2,6 +2,25 @@
 
 using namespace std;
 
+//yes the variables wasnt in the right place
+//thats a big mistake 
+//btw i dont know why they are global :sob:
+//edit: nevermind im just gonna make a namespace for them...
+
+namespace CLC_processvar {
+int CLCmenu_choice;
+int add_numberCLC1;
+int add_numberCLC2;
+string CLC_thirdchoice;
+}
+
+namespace CLC_variables {
+int CLC_int1;
+int CLC_int2;
+int CLC_int3;
+}
+
+
 void CLCmenu_interact() {
 
     cout<<R"( WELCOME TO CALCULATOR!
@@ -27,6 +46,10 @@ void CLCsilly_welcome() {
 //kinda fun i guess!
 
 void CLCadd_choice() {
+
+    using namespace CLC_processvar;
+    using namespace CLC_variables; 
+
     CLCsilly_welcome();
     cin>>CLC_int1;
 
@@ -65,6 +88,9 @@ void CLCadd_choice() {
 //i dont care about it...
 
 void CLCminus_choice() {
+
+    using namespace CLC_processvar;
+    using namespace CLC_variables; 
     
     CLCsilly_welcome();
     cin>>CLC_int1;
@@ -90,6 +116,9 @@ void CLCminus_choice() {
 //i feel like a [[bigshot]]
 
 void CLCmultiply_choice() {
+
+    using namespace CLC_processvar;
+    using namespace CLC_variables; 
     
     CLCsilly_welcome();
     cin>>CLC_int1;
@@ -116,6 +145,10 @@ void CLCmultiply_choice() {
 }
 
 void CLCdivide_choice() {
+
+    using namespace CLC_processvar;
+    using namespace CLC_variables; 
+    
     CLCsilly_welcome();
     cin>>CLC_int1;
 
